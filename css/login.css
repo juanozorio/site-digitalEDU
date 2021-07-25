@@ -1,0 +1,25 @@
+html {
+    font-family: sans-serif, arial, helvetica;
+}
+
+#perguntaCadastro {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;    
+}
+
+.text-center {
+    background-color: #2b475e;
+}
+
+#infologin {
+
+    color: white;
+    margin-bottom: 30px;
+}
+
+#button-login {  
+    font-weight: bold;
+}
