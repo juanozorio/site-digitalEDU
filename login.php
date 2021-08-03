@@ -11,15 +11,15 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="autenticacao_login.php" method="POST">
       <img class="mb-4" src="imagens/logo.png" alt="" width="150" height="150">
       <h2 id="infologin">Realize o Login</h2>
 
       <label for="inputEmail" class="sr-only">Endereço de email</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Seu email" required autofocus>
+      <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Seu email" required autofocus>
 
       <label for="inputPassword" class="sr-only">Senha</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+      <input type="password" id="inputPassword" name="senha" class="form-control" placeholder="Senha" required>
 
       <div id="perguntaCadastro">
         <a href="cadastro.php" ><font color=white>Primeiro acesso ? Se cadastre !</a>

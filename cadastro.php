@@ -10,7 +10,7 @@
 </head>
 
 <body class="text-center">
-    <form action="" class="form-signin" method="POST">
+    <form action="cadastrar.php" class="form-signin" method="POST">
 
         <img class="mb-4" src="imagens/logo.png" width="150" height="150">
         
@@ -20,23 +20,23 @@
         </div>
         
         <div class="form-label-group">
-          <input type="name" class="form-control" maxlength="80" required>
+          <input type="name" name="nome" class="form-control" maxlength="80" required>
           <label>Nome Completo</label>
         </div>
 
         <div class="form-label-group">
-              <input type="email" class="form-control" maxlength="50" required>
+              <input type="email" name="email" class="form-control" maxlength="50" required>
               <label>E-mail</label>
         </div>
 
         <div class="form-label-group">
-            <input type="tel" class="form-control" maxlength="15" required>
+            <input type="tel" name="celular" class="form-control" maxlength="15" required>
             <label>Celular</label>
         </div>
         
 
         <div class="form-label-group">
-          <input type="password" class="form-control" placeholder="" maxlength="30" required    >
+          <input type="password" name = "senha"class="form-control" placeholder="" maxlength="30" required    >
           <label>Senha</label>
         </div>
 
