@@ -11,7 +11,7 @@
 
 <body>
     <div class="">
-        <p>Olá, ****, Seja bem vindo a plataforma DIGiTAL EDU,
+        <p>Olá, ***, Seja bem vindo a plataforma DIGiTAL EDU,
         acesse nosso menu para conhecer o nosso contéudo</p>
     </div>
     
@@ -21,7 +21,7 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="#">Sair</a>
+          <a class="nav-link" href="logout.php">Sair</a>
         </li>
     </ul>
 </body>
