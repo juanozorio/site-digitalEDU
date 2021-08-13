@@ -1,15 +1,15 @@
 <?php
-include ('conexao_db.php');
+require_once'conexao_db.php';
 session_start();
 
-$email = mysqli_real_escape_string($conexao, $_POST['email']);
-$senha = mysqli_real_escape_string($conexao, $_POST['senha']);
+$email = mysqli_real_escape_string($conexao, trim($_POST['email']));
+$senha = mysqli_real_escape_string($conexao, trim($_POST['senha']));
 
 $query = "SELECT * FROM usuarios WHERE email='$email' and senha='$senha';";
 
 $result = mysqli_query($conexao, $query);
  
-$row = mysqli_num_rows($result);
+$row = mysqli_num_rows($result);	
 
 echo $row;
 

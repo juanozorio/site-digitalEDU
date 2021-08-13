@@ -11,7 +11,7 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin" action="autenticacao_login.php" method="POST">
+    <form class="form-signin" action="autenticacao_login.php" method="POST1">
       <img class="mb-4" src="imagens/logo.png" alt="" width="150" height="150">
       <h2 id="infologin">Realize o Login</h2>
 
