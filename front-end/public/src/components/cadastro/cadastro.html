@@ -2,49 +2,75 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Digital EDU</title>
-    <link rel="stylesheet" href="css/cadastro.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Digital EDU</title>
+  <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../src/components/cadastro/cadastro.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script>
+
+    function validate() {
+      event.preventDefault();
+
+      const objCadastro = {
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        celular: document.getElementById('celular').value,
+        senha: document.getElementById('senha').value
+      } 
+    }
+
+      const JsonDados = JSON.stringify(objCadastro)
+      console.log(JsonDados)      
+      /*
+      window.onload = function () {
+        var botaoEnviar = document.getElementById("button-cadastro");
+
+        botaoEnviar.addEventListener("click", function (event) {
+          validate();
+      }/
+    }*/
+  </script>
 </head>
 
 <body class="text-center">
-    <form action="cadastrar.php" class="form-signin" method="POST">
+  <form action="" class="form-signin" method="POST">
 
-        <img class="mb-4" src="imagens/logo.png" width="150" height="150">
-        
-        <div class="text-center mb-4">        
-          <h1 class="h3 mb-3 font-weight-normal"><strong>Realize o seu cadastro !</strong></h1>
-          <p>Faça o seu cadastro, para ter acesso a todo conteúdo da plataforma !</p>
-        </div>
-        
-        <div class="form-label-group">
-          <input type="name" name="nome" class="form-control" maxlength="80" required>
-          <label>Nome Completo</label>
-        </div>
+    <img src="/imagens/logo.png" width="150" height="150">
 
-        <div class="form-label-group">
-              <input type="email" name="email" class="form-control" maxlength="50" required>
-              <label>E-mail</label>
-        </div>
+    <div class="text-center mb-4">
+      <h1 class="h3 mb-3 font-weight-normal"><strong>Realize o seu cadastro !</strong></h1>
+      <p>Faça o seu cadastro, para ter acesso a todo conteúdo da plataforma !</p>
+    </div>
 
-        <div class="form-label-group">
-            <input type="tel" name="celular" class="form-control" maxlength="15" required>
-            <label>Celular</label>
-        </div>
-        
+    <div class="form-label-group">
+      <input type="name" name="nome" id="nome" class="form-control" maxlength="80" required>
+      <label>Nome Completo</label>
+    </div>
 
-        <div class="form-label-group">
-          <input type="password" name = "senha"class="form-control" placeholder="" maxlength="30" required    >
-          <label>Senha</label>
-        </div>
+    <div class="form-label-group">
+      <input type="email" name="email" id="email" class="form-control" maxlength="50" required>
+      <label>E-mail</label>
+    </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit" id="button-cadastro">Entrar</button>
-        <a href="login.php"><font color=white>Se tiver cadastro, volte para a página de Login !</a>
-      </form>
+    <div class="form-label-group">
+      <input type="tel" name="celular" id="celular" class="form-control" maxlength="15" required>
+      <label>Celular</label>
+    </div>
+
+
+    <div class="form-label-group">
+      <input type="password" name="senha" id="senha" class="form-control" placeholder="" maxlength="30" required>
+      <label>Senha</label>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit" id="button-cadastro">Entrar</button>
+    <a href="../../../src/components/login/login.html">
+      <font color=white>Se tiver cadastro, volte para a página de Login !
+    </a>
+  </form>
 </body>
 
 </html>
-
-
