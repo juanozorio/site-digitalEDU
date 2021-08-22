@@ -8,31 +8,6 @@
   <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="../../../src/components/cadastro/cadastro.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script>
-
-    function validate() {
-      event.preventDefault();
-
-      const objCadastro = {
-        nome: document.getElementById('nome').value,
-        email: document.getElementById('email').value,
-        celular: document.getElementById('celular').value,
-        senha: document.getElementById('senha').value
-      } 
-    }
-
-      const JsonDados = JSON.stringify(objCadastro)
-      console.log(JsonDados)      
-      /*
-      window.onload = function () {
-        var botaoEnviar = document.getElementById("button-cadastro");
-
-        botaoEnviar.addEventListener("click", function (event) {
-          validate();
-      }/
-    }*/
-  </script>
 </head>
 
 <body class="text-center">
@@ -72,5 +47,7 @@
     </a>
   </form>
 </body>
-
 </html>
+
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="../../../../public/src/components/cadastro/cadastro.js"></script>
