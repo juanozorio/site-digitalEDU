@@ -1,8 +1,9 @@
 //Exportar uma funcao que recebe os quatros valores
 
 
-/*export const markChargeback = (d1, d2, d3, d4) => async () => {
-    try {
+export const teste = (d1, d2, d3, d4) => async () => {
+    console.log("aqui")
+    /*try {
       const response = await VOU CHAMAR MINHA FUNCAO DO PHP AQUI
 
       if (!response){
@@ -14,5 +15,4 @@
       toastr.error('Erro', 'Erro ao cadastrar');
     }
   };
-
-*/
+*/}
