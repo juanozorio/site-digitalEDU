@@ -5,6 +5,7 @@ use app\login\service\LoginService;
 
 class AuthenticationController
 {
+  
 	private $service;
 
 	public function __construct(LoginService $service)

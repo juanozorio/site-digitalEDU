@@ -1,6 +1,6 @@
 //Exportar uma funcao que recebe os quatros valores
 
-export default function teste(objCadastro) {
+export default function actionCadastro(objCadastro) {
   console.log(objCadastro);
     return alert('aqui dentro da função');
 

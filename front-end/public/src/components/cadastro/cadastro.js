@@ -1,4 +1,4 @@
-import teste from "../../action/cadastro.js";
+import actionCadastro from "../../action/cadastro.js";
 
 window.onload = function () {
     const botaoEnviar = document.getElementById('button-cadastro');
@@ -16,5 +16,5 @@ function pegarDados() {
         'senha': document.getElementById('senha').value,
     }
 
-    teste(objCadastro);
+    actionCadastro(objCadastro);
 }
