@@ -1,8 +1,11 @@
 <?php
-  $usuario = $_POST['data'];
 
-  $dados = json_decode($usuario, true);
+  $router->namespace('app\login\controller')
+    ->prefix('login')
+    ->group(function ($router) {    
+      $router->post('/', 'AuthenticationController@login');
+  });
 
-  var_dump($dados);
+  $array=json_decode($_POST['data']);
 
-  echo $dados;
+  return var_dump($array);
